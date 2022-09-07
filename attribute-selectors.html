@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles </title>
+
+    <style>
+        .container {
+            width: 80%;
+            min-height: 400px;
+            overflow: auto;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        div[title] {
+            border: 2px solid green;
+            margin: 10px;
+        }
+
+        /* Starts with */
+        div[keywords ^="computer"] {
+            color: red;
+        }
+
+        /* Ends With */
+        div[keywords $="Coding"] {
+            color: brown
+        }
+
+        /* contains */
+        div[keywords *="di"] {
+            color: yellow
+        }
+
+        /* contains Full word */
+        div[keywords~="html"] {
+            color: rgb(51, 182, 182);
+        }
+
+        /* i means any case (Case Insensitivity */
+        div[keywords $="coding" i] {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="article" title="this is computer history" keywords="computer disc laptop">
+            <h3>
+                this is about computer history
+            </h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptates quis similique, dignissimos porro
+            corporis non cum veritatis adipisci itaque amet voluptatibus odio hic ab aperiam nemo vel beatae aspernatur!
+        </div>
+        <div class="article" title="how to format a system" keywords="format disc system">
+            <h3>
+                How to format a system
+            </h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptates quis similique, dignissimos porro
+            corporis non cum veritatis adipisci itaque amet voluptatibus odio hic ab aperiam nemo vel beatae aspernatur!
+        </div>
+
+        <div class="article" title="Java Programming Language" keywords="Java Programming Coding">
+            <h3>
+                Java Programming Language
+            </h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptates quis similique, dignissimos porro
+            corporis non cum veritatis adipisci itaque amet voluptatibus odio hic ab aperiam nemo vel beatae aspernatur!
+        </div>
+
+        <div class="article" title="Attribute selectors" keywords="css html design">
+            <h3>
+                Attribute selectors
+            </h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptates quis similique, dignissimos porro
+            corporis non cum veritatis adipisci itaque amet voluptatibus odio hic ab aperiam nemo vel beatae aspernatur!
+        </div>
+    </div>
+</body>
+
+</html>

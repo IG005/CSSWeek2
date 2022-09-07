@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80%;
+            min-height: 500px;
+            overflow: auto;
+            margin: 0 auto;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+
+        button {
+            width: 150px;
+            height: 60px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        a {
+            color: blue;
+            font-size: 14px;
+        }
+
+        a:hover {
+            color: red;
+            font-size: 22px;
+        }
+
+        a:visited {
+            color: green;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 5px;
+        }
+
+        input:disabled {
+            /* background-color: black;*/
+        }
+
+        input[disabled] {
+            background-color: gray;
+        }
+
+        .parent {
+            width: 100%;
+            min-height: 200px;
+            overflow: auto;
+        }
+
+        .parent .child {
+            border: 1px solid red;
+            height: 50px;
+            width: 100%;
+        }
+
+        .parent .child:last-child {
+            border: 2px solid green;
+            margin: 10px;
+        }
+
+        .parent .child:first-child {
+            border: 5px solid green;
+        }
+
+        .parent .child:nth-child(2) {
+            border: 3px solid yellow;
+        }
+
+        .parent .child:nth-child(5) {
+            border: 10px dotted magenta;
+            min-height: 200px;
+            overflow: auto;
+        }
+
+        .parent .child:nth-child(5) .grand-child {
+            height: 30px;
+            width: 40%;
+            float: left;
+            border: solid 1px black;
+            margin: 5px;
+        }
+
+        .parent .child:nth-child(5) .grand-child:nth-child(3n+1) {
+            background-color: green;
+        }
+
+        .parent .child:nth-child(5) .grand-child:nth-child(even) {
+            background-color: red;
+        }
+
+        .parent .child:nth-child(5) .grand-child:nth-child(odd) {
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <button>Submit Form</button>
+
+            <ul>-
+            </ul>
+
+            <form action="">-
+            </form>
+        </div>
+        <div class="parent">
+            <div class="child"> child 1</div>
+            <div class="child"> child 2</div>
+            <div class="child"> child 3</div>
+            <div class="child"> child 4</div>
+            <div class="child">
+                child 5
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+                <div class="grand-child"></div>
+            </div>
+            <div class="child">
+                New Last Born
+            </div>
+        </div>
+</body>
+
+</html>
